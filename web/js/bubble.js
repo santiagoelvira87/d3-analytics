@@ -14,7 +14,7 @@ var svg = d3.select("#my_dataviz")
 
 //Read the data
 //d3.csv("https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_dataset/4_ThreeNum.csv", function(data) {
-d3.csv("https://raw.githubusercontent.com/santiagoelvira87/d3-analytics/master/data/bestsellers%20with%20categories.csv", function(data) {
+d3.csv("https://raw.githubusercontent.com/santiagoelvira87/d3-analytics/master/data/bestsellerswithcategories.csv", function(data) {
 
   // Add X axis
   var x = d3.scaleLinear()
