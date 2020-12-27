@@ -13,8 +13,10 @@ var svG = d3.select("#scatter_area")
           "translate(" + margin.left + "," + margin.top + ")");
 
 // Create data
-var data = [ {x:10, y:20}, {x:40, y:90}, {x:80, y:50} ]
+//var data = [ {x:10, y:20}, {x:40, y:90}, {x:80, y:50} ]
 
+d3.csv("../data/test.csv", function(data) {
+  console.log(data)
 // X scale and Axis
 var x = d3.scaleLinear()
     .domain([0, 100])         // This is the min and the max of the data: 0 to 100 if percentages
@@ -41,3 +43,5 @@ svG
     .attr("cx", function(d){ return x(d.x) })
     .attr("cy", function(d){ return y(d.y) })
     .attr("r", 7)
+
+})
