@@ -15,7 +15,7 @@ var svG = d3.select("#scatter_area")
 // Create data
 //var data = [ {x:10, y:20}, {x:40, y:90}, {x:80, y:50} ]
 
-d3.csv("../data/test.csv", function(data) {
+d3.csv("https://raw.githubusercontent.com/santiagoelvira87/d3-analytics/master/data/test.csv", function(data) {
   console.log(data)
 // X scale and Axis
 var x = d3.scaleLinear()
